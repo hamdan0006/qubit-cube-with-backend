@@ -1,0 +1,473 @@
+.service-page{
+    display: flex;
+    justify-content: center;
+    background: #F4F7FC;
+    
+}
+.service-page-wrapper{
+    width: 90%;
+    height: auto;
+}
+.icon-home {
+    width: 12px; 
+    height: 12px;
+  
+  }
+.service-page-heading{
+    display: flex;
+    justify-content: center;
+    width: 50%;
+    height: 60vh;
+    margin:30px 0px 80px 70px;
+}
+.service-heading {
+    padding: 20px;
+    margin-top: 40px;
+     
+  }
+  
+  .service-heading a {
+    color: gray;
+    font-size: 18px;
+    font-weight: 500; 
+    margin-right: 10px; 
+  }
+  .service-heading span{
+    color: rgb(75, 75, 75);
+    font-size: 20px;
+    font-weight: 500;
+  }
+  
+  .service-heading h1{
+    font-size: 55px;
+    font-weight: 600;
+    margin: 20px 0px 20px 0px;
+    color: #47141E;
+  }
+  .service-heading p{
+    color: gray;
+    font-size: 20px;
+  }
+  
+
+  /* counter component  */
+
+  .client-count-wrp {
+ 
+    margin-bottom: 20px;
+  }
+  
+  
+  
+  .client-count-wrp-inner {
+    display: flex;
+    justify-content: center;
+  }
+  
+  /*  */
+  
+  .cards{
+    margin: 15px;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 330px;
+    height: 160px;
+    background: white;
+    border-radius: 18px;
+    transition: 0.8s ease;
+    
+  }
+  .cards:hover{
+    transform: translateY(-12px);
+  }
+  .cards h4{
+    font-size: 50px;
+    font-weight: 600;
+    color:#ed496a;
+
+  }
+  .cards p {
+    font-size: 15px;
+    margin-top: 20px;
+    color: #565253;
+  }
+  #sub-heading{
+    text-align: center;
+    margin: 160px 0px 200px 0px;
+    font-size: 50px;
+    color: #47141E;
+
+  }
+  @media (max-width:991px) {
+    .mt-100 {
+        margin-top: 30px !important;
+    }
+    .client-count-wrp {
+        padding: 40px 0;
+    }
+    .client-count-wrp-inner {
+        flex-direction: column;
+    }
+    .cards h4 {
+        font-size: 50px;
+        line-height: 40px;
+    }
+    .cards {
+        margin: 20px 0;
+    }
+    .client-count-wrp {
+        padding: 25px 0;
+        margin: 0 25px;
+    }
+    /****/
+  }
+
+.main-service-page-sec{
+    display: flex;
+    justify-content: center;
+    
+}
+  .company-services {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px; 
+    width: 90%;
+  }
+  
+  .company-services-box {
+    flex: 1 1 49%; /* Each box takes 48% width with some margin to create 50% */
+    max-width: 50%;
+    padding: 70px;
+    box-sizing: border-box;
+    border-radius: 9px;
+    transition: 0.5s;
+    
+  }
+  .company-services-box:hover{
+    box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
+  }
+  .box-content-area{
+    width: 90%;
+  }
+  .service-img{
+    width: 80px;
+    height: 80px;
+  }
+  .box-content-area h2{
+    font-size: 20px;
+    font-weight: 500;
+    margin: 20px 0px 20px 0px;
+  }
+
+  .box-content-area p{
+    font-size: 19px;
+    color: #47141E;
+    line-height: 30px;
+    margin-bottom: 20px;
+  }
+ .box-content-area .learn-btn{
+    font-size: 17px;
+    color: #ec5876;
+    cursor: pointer;
+    font-weight: 600;
+  }
+
+/* what we do  */
+
+
+.team-sec{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 40px 0px 250px 0px;
+  
+}
+
+.team-sec-elem{
+  display: flex;
+  flex-direction: column;
+  flex-basis: 45.8%;
+  height: auto;
+  max-width: 50%;
+
+}
+.team-details{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin: 20px 0px 0px 50px;
+
+}
+.team-details h5{
+  font-size: 16px;
+  color: #ED4164;
+  font-weight: 500;
+ margin-bottom: 20px;
+}
+.team-details h1{
+  font-size: 46px;
+  font-weight: 700;
+ margin-bottom: 25px;
+
+}
+.team-details-txt{
+  width: 85%;
+  font-size: 20px;
+  color: #47141E;
+}
+.tick-icon{
+  margin-right: 12px;
+}
+.team-goals-list{
+  list-style: none;
+  margin-bottom: 40px;
+}
+
+.team-goals-list-item{
+  font-size: 18px;
+  font-weight: 500;
+  margin: 20px 0px 0px 0px;
+  color: #332f30;
+}
+
+.image-container {
+  position: relative; /* Set the container position to relative */
+  width: 300px; /* Set the desired width */
+  height: 200px; /* Set the desired height */
+
+  
+}
+
+.we-img {
+  position: absolute; /* Allow overlapping by using absolute positioning */
+  width: 100%; /* Adjust the image size */
+  height: 100%;
+  object-fit: cover; /* Ensure images cover the container */
+  border-radius: 14px;
+}
+
+.service-1 {
+  width: 410px;
+  height: 410px;
+  z-index: 1; 
+}
+
+.service-2 {
+  z-index: 2; /* Image 2 will appear above Image 1 */
+  top: 100px; /* Adjust the position */
+  left: 170px; /* Adjust the position */
+  width: 80%; /* Adjust the size of the second image */
+  height: auto; /* Maintain aspect ratio */
+  height: 410px;
+  width: 410px;
+}
+
+
+/* social media section  */
+
+.social-media-sec{
+  display: flex;
+  justify-content: center;
+  margin-bottom: 300px;
+}
+
+.social-media-sec-elem{
+  width: 41%;
+  height: 50vh;
+  padding: 12px;
+}
+
+.social-media-sec-elem h4{
+  font-size: 16px;
+  color: #ED4164;
+  font-weight: 500;
+ margin-bottom: 20px;
+}
+.social-media-sec-elem h1{
+  font-size: 46px;
+  font-weight: 700;
+ margin-bottom: 25px;
+}
+
+.social-media-sec-elem p{
+  width: 85%;
+  font-size: 19px;
+  line-height: 30px;
+  color: #47141E;
+}
+
+.social-image-container{
+  position: relative;
+  width: 300px;
+  height: 300px;
+
+}
+.social-we-img{
+  position: absolute;
+  border-radius: 12px;
+}
+.service-3{
+  width: 500px;
+  height: 570px;
+}
+
+.service-4{
+  width: 270px;
+  height: 270px;
+  top: 120px;
+  left: -60px;
+
+}
+@media (max-width: 600px){
+  .container{
+    max-width: 100% !important;
+    margin-left: 0px !important;
+  }
+
+}
+@media (max-width: 768px) {
+  .service-page-heading {
+      width: 100%;
+      height: auto;
+      margin: 0 auto;
+      margin-top: 30px;
+  }
+
+  .container{
+    margin-left: 50px ;
+  }
+  .client-count-wrp-inner {
+      flex-direction: column; /* Stack counters vertically */
+  }
+
+  .company-services-box {
+      flex: 1 1 100%;
+      max-width: 100%; /* Full width for mobile devices */
+  }
+.service-1 {
+  width: 320px;
+  height: 360px;
+  z-index: 1; 
+}
+
+
+
+.service-2 {
+  z-index: 2; /* Image 2 will appear above Image 1 */
+  top: 90px; /* Adjust the position */
+  left: 40px; /* Adjust the position */
+  width: 70%; /* Adjust the size of the second image */
+  height: auto; /* Maintain aspect ratio */
+  height: 330px;
+  width: 300px;
+}
+
+.social-media-sec{
+  flex-direction: column;
+  margin-bottom: 100px;
+}
+
+.service-3{
+  width: 300px;
+  height: 460px;
+}
+
+.service-4{
+  width: 180px;
+  height: 220px;
+  top: 120px;
+  left: -40px;
+
+}
+.social-media-sec-elem{
+}
+.social-media-sec-elem-txt{
+ width: 400px;
+ margin-top: 300px;
+}
+
+  .team-sec-elem, .social-media-sec-elem {
+      flex: 1 1 100%;
+      max-width: 100%; /* Full width for mobile devices */
+  }
+}
+
+@media (min-width: 768px) and (max-width :1200px){
+
+  .service-page{
+  }
+
+  .service-page-heading {
+    width: 100%;
+    height: auto;
+    margin: 30px 0;
+}
+
+
+.client-count-wrp-inner {
+  flex-direction: row; 
+  gap: 5px;
+}
+
+
+.team-sec-elem{
+  margin-top: 200px;
+  margin-bottom: 100px;
+}
+.service-1 {
+width: 410px;
+height: 410px;
+z-index: 1; 
+}
+
+
+
+.service-2 {
+z-index: 2; /* Image 2 will appear above Image 1 */
+top: 100px; /* Adjust the position */
+left: 110px; /* Adjust the position */
+width: 80%; /* Adjust the size of the second image */
+height: auto; /* Maintain aspect ratio */
+height: 410px;
+width: 410px;
+}
+
+.social-media-sec{
+flex-direction: column;
+margin-bottom: 100px;
+}
+
+.service-3{
+width: 430px;
+height: 570px;
+}
+
+.service-4{
+width: 220px;
+height: 220px;
+top: 120px;
+left: -60px;
+
+}
+.social-media-sec-elem{
+}
+.social-media-sec-elem-txt{
+width: 400px;
+margin-top: 300px;
+}
+
+.team-sec-elem, .social-media-sec-elem {
+    flex: 1 1 100%;
+    max-width: 100%; /* Full width for mobile devices */
+}
+
+}
+
+@media (min-width: 1200px){
+  .social-media-sec-elem-txt{
+    margin-left: 80px;
+  }
+}

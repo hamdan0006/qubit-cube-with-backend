@@ -1,0 +1,118 @@
+<section class="responsive-section" [ngClass]="{'show': isMenuOpen}">
+  <div class="logo-container">
+    <img src="../assets/full_logo_orignal_colour_png_720-removebg-preview.png" id="logo-img" alt="Logo">
+    <div class="cross-container" (click)="toggleResponsiveMenu()">
+      <svg class="cross" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+        <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+      </svg>
+    </div>
+  </div>
+
+  <div class="res-menu-sec" [ngClass]="{'open': isMenuOpen}">
+    <ul class="res-menu">
+      <li (click)="toggleResponsiveMenu()" routerLink="/" class="res-menu-item">Home</li>
+      <li (click)="toggleResponsiveMenu()" routerLink="/about" class="res-menu-item">About Us</li>
+
+      <li class="res-menu-item">
+        <div class="res-service-container" (click)="toggleServices()">
+          <p (click)="toggleResponsiveMenu()" routerLink="/services">Services</p>
+          <p class="service-dropdown">{{ isServicesOpen ? '-' : '+' }}</p>
+        </div>
+        
+      </li>
+      <ul class="service-sub-menu" [ngClass]="{'open': isServicesOpen}">
+
+        <li routerLink="/desktop-development" (click)="toggleResponsiveMenu()" class="service-sub-menu-item">
+          Desktop development</li>
+        <li routerLink="/seo" (click)="toggleResponsiveMenu()" class="service-sub-menu-item">SEO</li>
+        <li (click)="toggleResponsiveMenu()" class="service-sub-menu-item">QA</li>
+        <li routerLink="/digital-marketing"  (click)="toggleResponsiveMenu()" class="service-sub-menu-item">Digital Marketing</li>
+        <li routerLink="/web-design" (click)="toggleResponsiveMenu()" class="service-sub-menu-item">Web Design</li>
+        <li routerLink="/Ecommerce-solutions"  (click)="toggleResponsiveMenu()" class="service-sub-menu-item">E-commerce Solutions</li>
+        <li routerLink="/Rendering-UI-UX" (click)="toggleResponsiveMenu()" class="service-sub-menu-item">Rendering Ui/Ux</li>
+        <li routerLink="/Web-development" (click)="toggleResponsiveMenu()" class="service-sub-menu-item">Web Development</li>
+
+      </ul>
+      
+      <li routerLink="/contact" (click)="toggleResponsiveMenu()" class="res-menu-item">Contact</li>
+      <li routerLink="/blogs" (click)="toggleResponsiveMenu()" class="res-menu-item">Blog</li>
+    </ul>
+  </div>
+
+  <button id="res-btn">Get a Free Quote</button>
+
+<div class="div-res-btn-cont">
+
+</div>
+
+</section>
+
+
+
+  <nav class="navbar scrolled-up">
+    <div class="navbar-container">
+
+      <div class="main-menu">
+
+        <div class="logo">
+          <img src="../assets/full_logo_orignal_colour_png_720-removebg-preview.png" id="logo-img" alt="Logo">
+        </div>
+
+        <div class="nav-menu">
+          <ul class="list">
+            <li class="list-item">
+              <a routerLink="/" class="navbar-link">Home</a>
+            </li>
+            <li class="list-item">
+              <a routerLink="/about" class="navbar-link">About Us</a>
+            </li>
+            <li class="list-item service-li">
+              <a routerLink="/services"class="navbar-link">
+                <div class="services-li">
+                  <p>Services</p>
+                  <p class="dropdown-icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+                      <path stroke-linecap="round" stroke-linejoin="round" d="m19.5 8.25-7.5 7.5-7.5-7.5" />
+                    </svg>
+                  </p>
+                </div>
+              </a>
+              <!-- Dropdown Menu -->
+              <div class="dropdown">
+                <ul class="dropdown-list">
+                  <li><a routerLink="/desktop-development" class="dropdown-link">Desktop development</a></li>
+                  <li><a routerLink="/seo" class="dropdown-link">SEO</a></li>
+                  <li><a routerLink="/qa" class="dropdown-link">QA</a></li>
+                  <li><a routerLink="/digital-marketing" class="dropdown-link">Digital Marketing</a></li>
+                  <li><a routerLink="/web-design" class="dropdown-link">Web design</a></li>
+                  <li><a routerLink="/Ecommerce-solutions" class="dropdown-link">Ecommerce Solution</a></li>
+                  <li><a routerLink="/Rendering-UI-UX" class="dropdown-link">Rendering UI/UX</a></li>
+                  <li><a routerLink="/Web-development" class="dropdown-link">Web development</a></li>
+                </ul>
+              </div>
+            </li>
+            <li class="list-item">
+              <a routerLink="/contact" class="navbar-link">Contact</a>
+            </li>
+            <li class="list-item">
+              <a routerLink="/blogs" class="navbar-link">Blog</a>
+            </li>
+          </ul>
+        </div>
+        <button class="main-btn" aria-label="Get a free quote">Get a Free Quote</button>
+
+      </div>
+      <!-- [ngClass]="{'iconOut' : iconOut}" -->
+       
+      <div class="icon-container threeline-icon-container" aria-label="Open menu" (click)="toggleResponsiveMenu()">
+        <svg class="threeline-icon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12H12m-8.25 5.25h16.5" />
+        </svg>
+      </div>
+
+
+
+    </div>
+  </nav>
+  
+ 

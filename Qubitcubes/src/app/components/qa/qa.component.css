@@ -1,0 +1,141 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100..900&family=Outfit:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+.skill-wrapper{
+    font-family: "Poppins", system-ui;
+    margin-bottom: 100px;
+
+}
+.service-page{
+    display: flex;
+    justify-content: center;
+    background: #F4F7FC;
+}
+.service-page-wrapper{
+    width: 90%;
+    height: auto;
+}
+.icon-home {
+    width: 12px; 
+    height: 12px;
+  
+  }
+.service-page-heading{
+    display: flex;
+    justify-content: center;
+    width: 50%;
+    height: 40vh;
+    margin:30px 0px 0px 70px;
+}
+.service-heading {
+    padding: 20px;
+    margin-top: 40px;
+     
+  }
+  
+  .service-heading a {
+    color: gray;
+    font-size: 18px;
+    font-weight: 500; 
+    margin-right: 10px; 
+  }
+  .service-heading span{
+    color: rgb(75, 75, 75);
+    font-size: 17px;
+    font-weight: 500;
+  }
+  
+  .service-heading h1{
+    font-size: 55px;
+    font-weight: 600;
+    margin: 20px 0px 20px 0px;
+    color: #47141E;
+  }
+  .service-heading p{
+    color: gray;
+    font-size: 20px;
+  }
+  
+  .main-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .section-1{
+    width:60% ;
+  }
+  .section1-content{
+    padding: 20px;
+  }
+  .section1-content h2{
+    margin-left: 30px;
+    font-size: 20px;
+    color: #ed4164;
+  }
+  .main-txt{
+    align-items: center;
+    color: #47141E;
+    font-size: 15px;
+    font-weight: 500;
+    padding: 20px;
+  }
+  .section-2{
+    width:20% ;
+   
+  }
+  .service-section-skill{
+    background: #FDF2F2;
+    padding: 10px;
+
+  }
+  .section-2 h5{
+    text-align: center;
+    font-size: 18px;
+    font-weight: 400;
+  }
+
+.sill-list{
+    list-style: none;
+}
+
+.skill-list-item{
+    margin-top: 17px;
+    color: #ed4164;
+    cursor: pointer;
+
+}
+.skill-list-item:hover{
+
+
+}
+
+  .section1-content{
+    display: flex;
+    align-items: center;
+  }
+
+  #img{
+    width: 90px;
+    height: 90px;
+  }
+
+  @media only screen and (max-width: 900px) {
+
+    .main-container{
+        flex-direction: column;
+    }
+    
+    .main-content{
+        width: 100%;
+    }
+    .section1-content h2{
+        font-size: 20px;
+        margin-left: 40px;
+        font-weight: 400;
+    }
+    .service-section-skill{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+  }

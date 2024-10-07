@@ -1,0 +1,646 @@
+
+  a{
+    text-decoration: none;
+  }
+
+  main{
+    overflow: hidden;
+  }
+  
+  .icon{
+  width: 80%;
+  height: 40px;
+  }
+  
+  .heading-container {
+    width: 100%;
+    height: 300px;
+    display: flex;
+    align-items: end;
+    justify-content: center;
+    background: #F2F6FC;
+   
+  }
+  
+  
+  .content h2{
+  font-size: 60px;
+  font-weight: 500;
+  }
+
+  .content p{
+    font-size: 20px;
+    margin-top: 10px;
+    font-weight: 500;
+  }
+  
+  
+  .showcase {
+    width: 100%;
+    height: 120vh; /* Adjusted height to create more space */
+    background: url('../../../assets/Marketing-Agency-Hero-BG.webp') no-repeat;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    overflow-x: hidden;
+  }
+  
+  
+   .content {
+    margin-top: 80px;
+    width: 70vw;
+    text-align: center;
+    
+  }
+
+
+  .qoute-btn{
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    bottom: 0;
+  }
+  .qoute-btn button{
+    width: 90%;
+    height: 50px;
+    background: #ED4164;
+    color: white;
+    font-size: 17px;
+    font-weight: 400;
+    cursor: pointer;
+    border: none;
+    border-radius: 8px;
+    transition: 0.7s ease;
+  }
+  .qoute-btn button:hover{
+    width: 90%;
+    height: 50px;
+    background: white;
+    color: #ED4164;
+    font-size: 17px;
+    font-weight: 400;
+    cursor: pointer;
+    border: 1px solid #ED4164;
+    border-radius: 8px;
+  }
+
+  /* about-section */
+
+  .about-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 20px;
+  }
+  
+ 
+  .about-box {
+    flex: 1 1 45%; 
+    
+  }
+  
+
+  .about-box1 {
+  width: 100%;
+  }
+  .abou-img{
+    height: auto;
+    width: 100%;
+    
+  }
+  .about-box2 {
+    
+  }
+  
+  .about-box2-section{
+    margin: 40px 0px 0px 30px;
+    
+  }
+  .box2-section-dtls{
+margin-bottom: 30px;
+width: 80%;
+  }
+  .box2-section-dtls p{
+    color: #474646;
+    font-size: 16px;
+    font-weight: 500;
+
+  }
+  .box2-section-dtls h2{
+    font-size: 50px;
+    font-weight: 600;
+  }
+
+  .box2-section-dtls .box2-info-para{
+    font-size: 19px;
+    color: #ED4164;
+    /* line-height: 2.4cqw; */
+    line-height: 35px;
+    width: 80%;
+    font-weight: 500;
+  }
+  .about-btn{
+  
+  height: 50px;
+  width: 165px;
+  background: #ED4164;
+  border: 1.5px solid #F43F51;
+  cursor: pointer;
+  transition: 0.6s;
+  border-radius: 7px;
+  color: #fcfcfc;
+  font-weight: 600;
+  font-size: 16px;
+  }
+  .about-btn:hover{
+    background: transparent;
+    border: 1px solid #ED4164;
+    color: #474646;
+  }
+
+  /* Services section  */
+
+  .services {
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    text-align: center; 
+    margin-top: 20px;
+
+}
+.service-dtls p {
+    margin: 0; 
+    font-size: 0.9em;
+    color: #ED4164; 
+}
+
+.service-dtls h1 {
+    margin: 0.5em 0; /* Adjust spacing between headings */
+    font-size: 2.9em; /* Adjust as needed */
+}
+
+
+.card-section {
+    display: grid;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px;
+    max-width: 1200px;
+    width: 100%;
+    padding: 20px;
+    box-sizing: border-box;
+}
+.cards {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column; 
+    min-width: 180px; 
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    box-sizing: border-box;
+    text-align: center;
+    transition: 0.6s;
+    cursor: pointer;
+}
+.cards:hover{
+  background: #ED4164;
+}
+.cards:hover .service-card-heading{
+  color: white;
+}
+.cards:hover .service-card-dtls{
+  color: white;
+}
+.cards .service-card-heading{
+  font-size: 25px;
+  font-weight: 500;
+  margin: 20px 0px 20px 0px;
+}
+
+
+
+.cards .service-card-dtls{
+  font-weight: 500;
+  font-size: 16px;
+  color: #ED4164;
+  margin-bottom: 30px;
+}
+
+.svg-cont{
+  padding: 20px;
+  margin-top: 30px;
+  width: 60px;
+  height: 60px;
+  background-color: #FEF5EA;
+    display: inline-block; 
+    padding: 10px; 
+    border-radius: 8px; 
+}
+.e-font-icon-svg {
+  fill: #ED4164; 
+  
+}
+
+/* team section  */
+ 
+.team-sec{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 40px 0px 10px 0px;
+}
+
+.team-sec-elem{
+  display: flex;
+  flex-direction: column;
+  flex-basis: 45.8%;
+  height: auto;
+  max-width: 45%;
+
+}
+.team-details{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin: 20px 0px 0px 50px;
+
+}
+.team-details h5{
+  font-size: 16px;
+  color: #ED4164;
+  font-weight: 500;
+ margin-bottom: 20px;
+}
+.team-details h1{
+  font-size: 46px;
+  font-weight: 700;
+ margin-bottom: 25px;
+
+}
+.tick-icon{
+  margin-right: 12px;
+}
+.team-goals-list{
+  list-style: none;
+  margin-bottom: 40px;
+}
+
+.team-goals-list-item{
+  font-size: 18px;
+  font-weight: 500;
+  margin: 10px;
+  color: #ED4164;
+}
+
+/* testimonials  */
+.testimonials{
+  display: flex;
+  justify-content: center;
+  padding: 10px;
+}
+.testimonial-elem{
+  height: auto;
+  width: 42%;
+  
+}
+
+.testimonial-elem h5{
+  margin-bottom: 20px;
+  font-size: 16px;
+  color: #ED4164;
+  font-weight: 500;
+}
+
+.testimonial-elem h1{
+  font-size: 46px;
+  font-weight: 600;
+  margin-bottom: 20px;
+
+}
+.company-info{
+  font-size: 18px;
+  color: #e28094;
+  margin-bottom: 20px;
+
+}
+.ceo-name{
+  font-size: 21px;
+  color: #ED4164;
+  margin-bottom: 12px;
+
+}
+
+.company-name{
+  font-size: 18px;
+
+}
+    /* mediaqueries */
+
+    /* animations  */
+    .animations {
+      background: 
+        linear-gradient(#0007, #0000),
+        #123;
+      margin: 0;
+      height: 100vh;
+      overflow: hidden;
+      z-index: 1004;
+    }
+    /* Keyframes for the firework animation */
+@keyframes firework {
+  0% { transform: translate(var(--x), var(--initialY)); width: var(--initialSize); opacity: 1; }
+  50% { width: 0.5vmin; opacity: 1; }
+  100% { width: var(--finalSize); opacity: 0; }
+}
+
+.firework,
+.firework::before,
+.firework::after {
+  --initialSize: 0.5vmin;
+  --finalSize: 45vmin;
+  --particleSize: 0.2vmin;
+  --color1: yellow;
+  --color2: khaki;
+  --color3: white;
+  --color4: lime;
+  --color5: gold;
+  --color6: mediumseagreen;
+  --y: -30vmin;
+  --x: -50%;
+  --initialY: 60vmin;
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, var(--y));
+  width: var(--initialSize);
+  aspect-ratio: 1;
+  background: 
+    radial-gradient(circle, var(--color1) var(--particleSize), #0000 0) 50% 0%,
+    radial-gradient(circle, var(--color2) var(--particleSize), #0000 0) 100% 50%,
+    radial-gradient(circle, var(--color3) var(--particleSize), #0000 0) 50% 100%,
+    radial-gradient(circle, var(--color4) var(--particleSize), #0000 0) 0% 50%,
+    radial-gradient(circle, var(--color5) var(--particleSize), #0000 0) 80% 90%,
+    radial-gradient(circle, var(--color6) var(--particleSize), #0000 0) 95% 90%,
+    radial-gradient(circle, var(--color1) var(--particleSize), #0000 0) 90% 70%,
+    radial-gradient(circle, var(--color2) var(--particleSize), #0000 0) 100% 60%,
+    radial-gradient(circle, var(--color3) var(--particleSize), #0000 0) 55% 80%,
+    radial-gradient(circle, var(--color4) var(--particleSize), #0000 0) 70% 77%,
+    radial-gradient(circle, var(--color5) var(--particleSize), #0000 0) 22% 90%,
+    radial-gradient(circle, var(--color6) var(--particleSize), #0000 0) 45% 90%,
+    radial-gradient(circle, var(--color1) var(--particleSize), #0000 0) 33% 70%,
+    radial-gradient(circle, var(--color2) var(--particleSize), #0000 0) 10% 60%,
+    radial-gradient(circle, var(--color3) var(--particleSize), #0000 0) 31% 80%,
+    radial-gradient(circle, var(--color4) var(--particleSize), #0000 0) 28% 77%,
+    radial-gradient(circle, var(--color5) var(--particleSize), #0000 0) 13% 72%,
+    radial-gradient(circle, var(--color6) var(--particleSize), #0000 0) 80% 10%,
+    radial-gradient(circle, var(--color1) var(--particleSize), #0000 0) 95% 14%,
+    radial-gradient(circle, var(--color2) var(--particleSize), #0000 0) 90% 23%,
+    radial-gradient(circle, var(--color3) var(--particleSize), #0000 0) 100% 43%,
+    radial-gradient(circle, var(--color4) var(--particleSize), #0000 0) 85% 27%,
+    radial-gradient(circle, var(--color5) var(--particleSize), #0000 0) 77% 37%,
+    radial-gradient(circle, var(--color6) var(--particleSize), #0000 0) 60% 7%;
+  background-size: var(--initialSize) var(--initialSize);
+  background-repeat: no-repeat;
+}
+
+/* Apply animation only when 'animateFireworks' class is present */
+.firework.active,
+.firework.active::before,
+.firework.active::after {
+  animation: firework 2s forwards; /* Animation runs for 1 second and stops */
+}
+
+/* Pseudo-elements styling */
+.firework::before {
+  --x: -50%;
+  --y: -50%;
+  --initialY: -50%;
+  transform: translate(-50%, -50%) rotate(40deg) scale(1.3) rotateY(40deg);
+}
+
+.firework::after {
+  --x: -50%;
+  --y: -50%;
+  --initialY: -50%;
+  transform: translate(-50%, -50%) rotate(170deg) scale(1.15) rotateY(-30deg);
+}
+
+/* Specific styles for different firework elements */
+.firework:nth-child(2) {
+  --x: 30vmin;
+}
+
+.firework:nth-child(2),
+.firework:nth-child(2)::before,
+.firework:nth-child(2)::after {
+  --color1: pink;
+  --color2: violet;
+  --color3: fuchsia;
+  --color4: orchid;
+  --color5: plum;
+  --color6: lavender;  
+  --finalSize: 40vmin;
+  left: 30%;
+  top: 60%;
+  animation-delay: -0.7s;
+}
+
+.firework:nth-child(3) {
+  --x: -30vmin;
+  --y: -50vmin;
+}
+
+.firework:nth-child(3),
+.firework:nth-child(3)::before,
+.firework:nth-child(3)::after {
+  --color1: cyan;
+  --color2: lightcyan;
+  --color3: lightblue;
+  --color4: PaleTurquoise;
+  --color5: SkyBlue;
+  --color6: lavender;
+  --finalSize: 35vmin;
+  left: 70%;
+  top: 60%;
+  animation-delay: -0.7s;
+}
+
+    /* menu responsiveness */
+
+    @media screen and (min-width : 600px) {
+      .card-section{
+        grid-template-columns: repeat(2, 1fr);
+  
+        }
+       
+    }
+    @media screen and (min-width : 900px){
+      .card-section{
+        grid-template-columns: repeat(4, 1fr);
+
+  
+        }
+    
+    }
+    @media screen and (max-width: 600px){
+      .showcase{
+        width: 95%;
+      }
+      .home{
+        margin-top: 10px;
+      }
+      .content h2{
+        font-size: 50px;
+      }
+    }
+
+    @media screen and (max-width: 764px) {
+
+      .content h2{
+        font-size: 40px;
+        font-weight: 500;
+        }
+
+      .heading-container{
+        margin-top: 100px;
+      }
+      .heading-container h1{
+        font-size: 30px;
+      }
+      
+      /* about-section */
+      .about-box {
+        flex: 1 1 100%;
+        width: 100%;
+         /* Stacks boxes vertically on small screens */
+      }
+      .box2-section-dtls{
+        width: 100%;
+      }
+      /* team section  */
+
+      .team-sec{
+        display: flex;
+        flex-direction: column;
+      }
+
+      /* services section  */
+      .cards{
+        flex: 2 2  calc(50% - 20px); 
+
+      }
+
+      .team-sec-elem{
+        flex-basis: 100%;
+        max-width: 100%;
+      
+      }
+
+      /* testimonials  */
+
+      .testimonials{
+        flex-direction: column;
+        margin-bottom: 30px;
+      }
+      .testimonial-elem{
+        width: 99%;
+        
+      }
+      .testimonial-elem img {
+        width: 95%;
+      }
+
+      .testimonial-elem{
+        width: 99%;
+        margin-right: 10px;
+        
+      }
+  
+
+    }
+
+    @media (min-width: 764px) and (max-width: 1024px){
+      
+      .content h2{
+        font-size: 40px;
+        font-weight: 500;
+        margin-top: 20px;
+        }
+    
+      .cards{
+        flex: 1 1  calc(100% - 20px);
+      }
+
+ 
+
+      
+      .about-box {
+        flex: 1 1 100%; 
+      }
+
+      /* team section  */
+
+      .team-sec{
+        display: flex;
+        flex-direction: column;
+      }
+
+     /* team  */
+
+     .team-sec-elem{
+      flex-basis: 100%;
+      max-width: 100%;
+    
+    }
+
+      
+    .testimonials{
+      flex-direction: column;
+      margin-bottom: 30px;
+    }
+    .testimonial-elem{
+      width: 99%;
+      margin-right: 10px;
+      
+    }
+
+
+    }
+
+   @media (min-width: 1024px) and (max-width: 110px) {
+
+    .content h2{
+      font-size: 20px;
+      font-weight: 500;
+      }
+
+    .responsive-menu-section{
+      display: none;
+    }
+
+    /* .navbar .main-menu {
+      margin-right: 0px;
+      width: 50%;
+    }
+    .main-btn{
+      margin-left: 60px;
+      height: 45px;
+      width: 180px;
+      background: transparent;
+      border: 1.5px solid #F43F51;
+      cursor: pointer;
+      transition: 0.6s;
+      border-radius: 7px;
+    
+    } */
+
+    }

@@ -1,0 +1,122 @@
+<main class="blog-page">
+<section class="service-page-heading">
+    <div class="service-heading">
+        <a routerLink="/">Home <span>
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon-home" fill="none" viewBox="0 0 24 24"
+                    stroke-width="1.5" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="m8.25 4.5 7.5 7.5-7.5 7.5" />
+                </svg>
+            </span> </a>
+        <span>Blog</span>
+
+        <h1>Blog</h1>
+
+    </div>
+</section>
+
+<section class="blog">
+    <section class="blog-sec">
+        <div class="blog-container container-1">
+
+
+<section class="archive-wrapper">
+            <div class="archives">
+                <h2>Archives</h2>
+                <ul class="archive-list">
+                    <li>April 2024</li>
+                </ul>
+            </div>
+            
+        </section>
+
+            <div class="categories-wrapper">
+
+                <div class="categories-sec">
+
+                    <h2>Categories</h2>
+
+                    <ul class="categories-list">
+                        <li class="categories-list-item">AI</li>
+                        <li class="categories-list-item">app development</li>
+                        <li class="categories-list-item">digital marketing</li>
+                        <li class="categories-list-item"> E- Commerce</li>
+                        <li class="categories-list-item">Uncategorized</li>
+                        <li class="categories-list-item">web development</li>
+
+
+                    </ul>
+
+
+
+                </div>
+
+            </div>
+
+
+        </div>
+
+        <div class="blog-container container-2">
+          <div class="card"
+            *ngFor="let blog of blogs | paginate: { itemsPerPage: itemsPerPage, currentPage: currentPage }">
+            <div (click)="readMore(blog._id)">
+            <div class="image-container">
+              <img [src]="'http://localhost:3000' + blog.image" alt="{{ blog.title }}" class="card-image" />
+            </div>
+            <h5 class="card-title">{{ blog.title }}</h5>
+            <p class="description">{{ blog.subtitle }}</p>
+            <p class="txt">{{ blog.content | shorten: 50 }}</p>
+          </div>
+  
+            <ul class="card-list">
+              <li class="card-list-item">{{ blog.author }}</li>
+              <li class="card-list-item">April 11, 2024' </li> <!-- Example date -->
+              <li class="card-list-item">5 min read</li> <!-- Example read time -->
+            </ul>
+          </div>
+
+
+            <!-- <pagination-controls (pageChange)="currentPage = $event"></pagination-controls> -->
+
+
+        </div>
+
+    </section>
+
+    <section class="pagination-wrapper">
+        
+        <ng-container *ngIf="cards.length > itemsPerPage">
+            <ul class="pagination-controls">
+              <li>
+                <a *ngIf="currentPage > 1" (click)="currentPage = currentPage - 1">
+                  <div class="svg-container">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-1">
+                      <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 19.5 8.25 12l7.5-7.5" />
+                    </svg>
+                  </div>
+                </a>
+              </li>
+          
+              <li *ngFor="let page of getPages()" class="pag-item">
+                <a [class.active]="page === currentPage" (click)="currentPage = page">{{ page }}</a>
+              </li>
+          
+              <li>
+                <a *ngIf="currentPage < totalPages" (click)="currentPage = currentPage + 1">
+                  <div class="svg-container">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-1">
+                      <path stroke-linecap="round" stroke-linejoin="round" d="m8.25 4.5 7.5 7.5-7.5 7.5" />
+                    </svg>
+                  </div>
+                </a>
+              </li>
+            </ul>
+          </ng-container>
+       
+
+    </section>
+
+</section>
+</main>
+
+
+

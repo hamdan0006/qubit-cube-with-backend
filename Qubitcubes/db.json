@@ -1,0 +1,25 @@
+{
+  "blog": [
+    {
+      "id":"69e667c9-ba45-4aca-97d9-ffa7bce6f62d" ,
+      "title": "First Post",
+      "subtitle": "First subtitle",
+      "author": "First author",
+      "content": "This is the first post content"
+    },
+    {
+      "id": "69e667c9-ba45-4aca-97d9-ffa7bce6f72d",
+      "title": "qubitcubes",
+      "subtitle": "web dev ",
+      "content": "web dev ",
+      "author": "web dev "
+    },
+    {
+      "id": "5a845269-e8e3-4d74-be7d-ba544e178e71",
+      "title": "blog3",
+      "subtitle": "blog3st",
+      "content": "just nothing",
+      "author": "leo"
+    }
+  ]
+}

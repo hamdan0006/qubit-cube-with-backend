@@ -1,0 +1,11 @@
+<h1>{{ blog.title }}</h1>
+
+<section class="main-content">
+<h3>{{ blog.subtitle }}</h3>
+<img id="img" [src]="'http://localhost:3000' + blog.image" alt="{{ blog.title }}" />
+<div class="content">
+<p>{{ blog.content }}</p>
+</div>
+<p><strong>Author:</strong> <span id="author"> {{ blog.author }}</span></p>
+
+</section>
