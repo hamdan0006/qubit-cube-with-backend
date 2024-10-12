@@ -1,4 +1,4 @@
-// middlewares/validation.js
+
 const { body, validationResult } = require('express-validator');
 
 const validateContact = [

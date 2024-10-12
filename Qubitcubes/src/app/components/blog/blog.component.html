@@ -60,7 +60,8 @@
             *ngFor="let blog of blogs | paginate: { itemsPerPage: itemsPerPage, currentPage: currentPage }">
             <div (click)="readMore(blog._id)">
             <div class="image-container">
-              <img [src]="'http://localhost:3000' + blog.image" alt="{{ blog.title }}" class="card-image" />
+              <img [src]="blog.image" alt="{{ blog.title }}" class="card-image" />
+
             </div>
             <h5 class="card-title">{{ blog.title }}</h5>
             <p class="description">{{ blog.subtitle }}</p>

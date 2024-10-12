@@ -12,8 +12,8 @@ const blogSchema = new mongoose.Schema({
         required: true,
     },
     image: {
-        type: String, // Store the image path as a string
-        required: false, // Make it optional if not always provided
+        type: String, 
+        required: false, 
     },
     content: {
         type: String,
@@ -23,10 +23,7 @@ const blogSchema = new mongoose.Schema({
         type: String,
         required: true,
     }
-    // image: { // New field for image
-    //     type: String,
-    //     required: false, // Make it optional
-    // }
+    
 
 });
 
