@@ -1,30 +1,20 @@
 const Blog = require('../models/blogModel');
-const cloudinary = require('cloudinary').v2;
 
 
 const createBlogPost = async (req, res) => {
   try {
-    let imageUrl = null;
+    const imageUrl = req.file ? req.file.path : null; 
 
-    
-    if (req.file) {
-      const result = await cloudinary.uploader.upload(req.file.path, {
-        folder: 'blogs', 
-        resource_type: 'image',
-      });
-      imageUrl = result.secure_url; 
-    }
-
-   
+  
     const blog = new Blog({
       title: req.body.title,
       content: req.body.content,
       author: req.body.author,
       subtitle: req.body.subtitle,
-      image: imageUrl, 
+      image: imageUrl,
     });
 
-    // Save the blog to the database
+    
     const savedBlog = await blog.save();
     res.status(201).json(savedBlog); 
   } catch (error) {
@@ -60,6 +50,3 @@ const getBlogById = async (req, res) => {
 };
 
 module.exports = { createBlogPost, getAllBlogs, getBlogById };
-
-
-  
